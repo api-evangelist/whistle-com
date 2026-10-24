@@ -1,25 +1,97 @@
 aid: whistle-com
+
 name: whistle
-description: 'whistle is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by slow-ventures) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://assets.tractive.com/assets/image/shop-frontend/og-images/tractive-dog-4-og.jpg
+
+description: 'Tractive sells GPS tracking and health monitoring devices for dogs and cats. The smart trackers provide real‑time location, virtual fences, health insights, bark and scratch monitoring, and waterproof designs for pets of various sizes. Tractive markets these products directly to pet owners worldwide.'
+
 url: https://raw.githubusercontent.com/api-evangelist/whistle-com/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-24 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-24'
+
 modified: '2026-10-24'
+
 tags:
-- Company
-apis: []
+- Pet GPS
+- Pet Health Monitoring
+- Animal Tracking
+- Pet Safety
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- slow-ventures
+
 common:
+- type: Plans
+  url: plans/whistle-com-plans-pricing.yml
+- type: Security
+  url: https://tractive.com/en/l/vulnerability-disclosure
+- type: LLMsTxt
+  url: llms/whistle-com-llms.txt
+- type: SecurityTxt
+  url: well-known/whistle-com-tractive-security.txt
+- type: WellKnown
+  url: well-known/whistle-com-well-known.yml
+- type: Hosts
+  url: hosts/whistle-com-hosts.yml
+- type: Vendors
+  url: vendors/whistle-com-vendors.yml
+- type: TermsOfService
+  url: https://assets.tractive.com/static/legal/en-us/terms-of-service.pdf
+- type: Support
+  url: https://help.tractive.com/hc
+- type: PrivacyPolicy
+  url: https://assets.tractive.com/static/legal/en/privacy-policy.pdf
+- type: Pricing
+  url: https://tractive.com/en/c/plans
+- type: Newsroom
+  url: https://tractive.com/en/pr/press
+- type: Blog
+  url: https://tractive.com/blog/en/
+- type: Documentation
+  url: https://help.tractive.com/
+- type: VulnerabilityDisclosure
+  url: security/whistle-com-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/whistle-com-domain-security.yml
 - type: Website
   url: https://whistle.com
+
+apis: []
+
+x-backed-by:
+- slow-ventures
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-24'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://whistle.com/mcp
+    status: 403
+  - url: https://help.tractive.com/mcp
+    status: 401
+  - url: https://whistle.com
+    status: 200
+x-enrichment:
+  date: '2026-10-24'
+  status: enriched
+  artifacts_added: 11
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

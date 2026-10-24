@@ -1,0 +1,89 @@
+generated: '2026-10-24'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 6
+  own: 2
+  other_domain: 4
+  platform: 0
+  roles:
+  - api
+  - docs
+  - legal
+  - marketing
+  - website
+hosts:
+- host: api.tractive.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: tractive.com
+  role: api
+  relation: other-domain
+- host: api.whistle.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: whistle.com
+  role: api
+  relation: own
+- host: assets.tractive.com
+  found_by:
+  - pointer
+  types:
+  - TermsOfService
+  - PrivacyPolicy
+  serves: []
+  registrable_domain: tractive.com
+  role: legal
+  relation: other-domain
+- host: help.tractive.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - Support
+  - Documentation
+  serves:
+  - docs
+  registrable_domain: tractive.com
+  role: docs
+  relation: other-domain
+- host: tractive.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Security
+  - Pricing
+  - Newsroom
+  - Blog
+  serves: []
+  registrable_domain: tractive.com
+  role: marketing
+  relation: other-domain
+- host: whistle.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  serves:
+  - cdn
+  vendor: cloudfront
+  registrable_domain: whistle.com
+  role: website
+  relation: own

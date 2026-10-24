@@ -1,0 +1,56 @@
+generated: '2026-10-24'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://tractive.com/en/c/plans
+sources:
+- https://tractive.com/en/c/plans
+name: whistle pricing
+audience: consumer
+pricing_basis: per-seat
+plans:
+- name: 1‑Year Basic
+  price_text: $9 / month
+  price: 9
+  billing_period: monthly
+  description: 1‑Year Plan Starting from $9 / month
+- name: 1‑Year Premium
+  price_text: $11 / month
+  price: 11
+  billing_period: monthly
+  description: 1‑Year Plan Starting from $11 / month
+- name: 2‑Year Basic
+  price_text: $6 / month
+  price: 6
+  billing_period: monthly
+  description: 2‑Year Plan Starting from $6 / month
+- name: 2‑Year Premium
+  price_text: $7.50 / month
+  price: 7.5
+  billing_period: monthly
+  description: 2‑Year Plan Starting from $7.50 / month
+- name: 5‑Year Basic
+  price_text: $5 / month
+  price: 5
+  billing_period: monthly
+  description: 5‑Year Plan Starting from $5 / month
+- name: 5‑Year Premium
+  price_text: $6 / month
+  price: 6
+  billing_period: monthly
+  description: 5‑Year Plan Starting from $6 / month
+- name: Tractive Care (1‑Year)
+  price_text: $2 / month on top of your plan
+  price: 2
+  billing_period: monthly
+  description: 1‑Year Plan $2 / month on top of your plan
+- name: Tractive Care (2‑Year)
+  price_text: $1.50 / month on top of your plan
+  price: 1.5
+  billing_period: monthly
+  description: 2‑Year Plan $1.50 / month on top of your plan
+- name: Tractive Care (5‑Year)
+  price_text: $1 / month on top of your plan
+  price: 1
+  billing_period: monthly
+  description: 5‑Year Plan $1 / month on top of your plan
+docs: https://tractive.com/en/c/plans
